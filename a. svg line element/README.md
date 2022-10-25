@@ -1,6 +1,6 @@
 # SVG rect Element
 
-## SVG line tag
+## SVG line tag:
 
     <svg viewBox="0 0 0 0">
 
