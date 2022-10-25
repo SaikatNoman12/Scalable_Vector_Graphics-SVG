@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG line Element</title>
+
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .svg-main {
+            width: 600px;
+            height: 600px;
+            margin: auto;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            background-color: #eee;
+            border: 2px solid red;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>SVG line Element</h1>
+
+
+    <div class="svg-main">
+        <svg viewBox="0 0 100 100">
+            <line x1="20" y1="20" x2="70" y2="40" stroke="blue"></line>
+            <line x1="20" y1="40" x2="70" y2="40" stroke="red"></line>
+
+
+            <line x1="20" y1="60" x2="80" y2="60" stroke="red"></line>
+            <line x1="80" y1="60" x2="80" y2="80" stroke="red"></line>
+            <line x1="20" y1="80" x2="80" y2="80" stroke="red"></line>
+            <line x1="20" y1="60" x2="20" y2="80" stroke="red"></line>
+        </svg> 
+    </div>
+
+</body>
+
+</html>
