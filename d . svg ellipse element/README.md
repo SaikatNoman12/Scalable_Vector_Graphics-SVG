@@ -8,3 +8,6 @@
 
     </svg>
 
+### Demo image:
+
+<img src="./ellipseDemo.png">
