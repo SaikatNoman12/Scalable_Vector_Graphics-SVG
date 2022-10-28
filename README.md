@@ -11,3 +11,5 @@
 4. SVG ellipse element.
 
 5. SVG polyline element.
+
+6. SVG polygon element. 
