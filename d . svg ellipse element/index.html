@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG ellipse Element</title>
+
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .svg-main {
+            width: 600px;
+            height: 600px;
+            margin: auto;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            border: 2px solid red;
+            background-color: gray;
+        }
+
+        .ellipse-one {
+            /* transform: rotate(30deg); */
+            transform: rotate(0deg);
+            transform-origin: 50% 50%;
+            animation: circle1 2s ease-in-out 0s infinite alternate forwards;
+        }
+
+        @keyframes circle1 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .ellipse-two {
+            /* transform: rotate(90deg); */
+            transform: rotate(0deg);
+            transform-origin: 50% 50%;
+            animation: circle2 2s ease-in-out 0.2s infinite alternate forwards;
+        }
+
+        @keyframes circle2 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .ellipse-three {
+            /* transform: rotate(150deg); */
+            transform: rotate(0deg);
+            transform-origin: 50% 50%;
+            animation: circle3 2s ease-in-out .4s infinite alternate forwards;
+        }
+
+        @keyframes circle3 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>SVG ellipse Element</h1>
+
+    <div class="svg-main">
+
+        <svg viewBox="0 0 100 100">
+            <ellipse class="ellipse-one" cx="50" cy="50" rx="20" ry="35" stroke="black" fill="none"></ellipse>
+
+            <ellipse class="ellipse-two" cx="50" cy="50" rx="20" ry="35" stroke="black" fill="none"></ellipse>
+
+            <ellipse class="ellipse-three" cx="50" cy="50" rx="20" ry="35" stroke="black" fill="none"></ellipse>
+
+        </svg>
+
+    </div>
+
+</body>
+
+</html>
