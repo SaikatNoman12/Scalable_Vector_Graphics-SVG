@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG path Element</title>
+
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .svg-main {
+            width: 600px;
+            height: 600px;
+            margin: auto;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            border: 2px solid red;
+            background-color: gray;
+        }
+
+        path{
+            stroke-linecap: round;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>
+        SVG Cubic Bezier Curves & Quadratic Bezier Curves
+    </h1>
+
+    <div class="svg-main">
+        <svg viewBox="0 0 100 100">
+
+            <path d="M10,50 C50,0 50,100 90,50" stroke="green" fill="none"></path>
+
+            <path d="M10,50 C10,30 20,0 50,50 S0,40 90,40" fill="none" stroke="yellow"></path>
+
+            <path class="kk" d="M10,50 Q-5,70 90,50" stroke="white" fill="none"></path>
+
+            <path d="M10,40 Q50,20 50,50 T90,50" fill="none" stroke="red"></path>
+
+        </svg>
+    </div>
+
+
+</body>
+
+</html>
