@@ -19,3 +19,7 @@
 8. SVG path element (2).
 
 9. SVG path element (3).
+
+10. SVG text element.
+
+12. SVG image element.

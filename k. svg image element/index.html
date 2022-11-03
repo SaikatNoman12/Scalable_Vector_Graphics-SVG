@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG path Element</title>
+
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .svg-main {
+            width: 600px;
+            height: 600px;
+            margin: auto;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            border: 2px solid red;
+            background-color: gray;
+        }
+
+        path {
+            stroke-linecap: round;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>
+        SVG image Element
+    </h1>
+
+    <div class="svg-main">
+        <svg viewBox="0 0 100 100">
+
+            <image X="25" Y="0"   width="50" height="100" xlink:href="./profile-1.jpg"></image>
+
+            <path d="M20,50 70,80" stroke="red" fill="none"></path>
+
+        </svg>
+    </div>
+
+
+</body>
+
+</html>
