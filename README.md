@@ -15,3 +15,7 @@
 6. SVG polygon element. 
 
 7. SVG path element (1).
+
+8. SVG path element (2).
+
+9. SVG path element (3).
