@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG stroke Properties</title>
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .svg-main {
+            width: 600px;
+            height: 600px;
+            margin: auto;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            border: 2px solid red;
+            background-color: gray;
+        }
+
+        line {
+            stroke: red;
+            stroke-width: 3;
+            stroke-opacity: 0.8;
+            /* stroke-linecap: butt; */
+            /* stroke-linecap: square; */
+            stroke-linecap: round;
+        }
+
+        .star {
+            fill: black;
+            fill-opacity: 1;
+            /* fill-rule: nonzero; */
+            fill-rule: evenodd;
+            stroke: red;
+            stroke-width: 1;
+            stroke-opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>
+        SVG Fill Properties
+    </h1>
+
+    <div class="svg-main">
+
+        <svg viewBox="0 0 100 100">
+
+            <polygon class="star" points="30,80 50,20 70,80 20,40 80,40" stroke="red" fill="black"></polygon>
+
+        </svg>
+    </div>
+</body>
+
+</html>

@@ -23,3 +23,7 @@
 10. SVG text element.
 
 12. SVG image element.
+
+13. SVG stroke properties
+
+14. SVG fill properties
