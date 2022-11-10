@@ -27,3 +27,5 @@
 13. SVG stroke properties
 
 14. SVG fill properties
+
+15. SVG group Element
