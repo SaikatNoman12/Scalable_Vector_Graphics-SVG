@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG stroke Properties</title>
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .svg-main {
+            width: 600px;
+            height: 600px;
+            margin: auto;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            border: 2px solid red;
+            background-color: gray;
+        }
+
+        /* .circle {
+            transform: rotate(30deg);
+        }
+
+        .rect {
+            transform: rotate(30deg);
+        } */
+
+        .combine {
+            transform: rotate(30deg);
+            transform-origin: center;
+            stroke: blue;
+            stroke-dasharray: 20;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>
+        SVG Group Element
+    </h1>
+
+    <div class="svg-main">
+
+        <svg viewBox="0 0 100 100">
+
+            <g class="combine">
+                <circle class="circle" CX="50" CY="50" r="26" fill="red"></circle>
+
+                <rect class="rect" X="40" Y="40" width="20" height="20" fill="yellow"></rect>
+            </g>
+
+        </svg>
+
+    </div>
+</body>
+
+</html>
