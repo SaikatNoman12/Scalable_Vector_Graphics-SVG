@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG stroke Properties</title>
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .svg-main {
+            width: 600px;
+            height: 600px;
+            margin: auto;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            border: 2px solid red;
+            background-color: gray;
+        }
+
+        line {
+            stroke: red;
+            stroke-width: 3;
+            stroke-opacity: 0.8;
+            /* stroke-linecap: butt; */
+            /* stroke-linecap: square; */
+            stroke-linecap: round;
+        }
+
+        rect {
+            fill: pink;
+            stroke: red;
+            stroke-width: 3;
+            stroke-opacity: 0.6;
+            /* stroke-linejoin: miter; */
+            /* stroke-linejoin: round; */
+            stroke-linejoin: bevel;
+
+            stroke-dasharray: 2, 5, 1, 3, 3, 1;
+            animation: dashArr 10s linear infinite reverse forwards;
+
+        }
+
+
+        @keyframes dashArr {
+            0% {
+                stroke-dashoffset: 0;
+            }
+
+            100% {
+                stroke-dashoffset: 1000;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>
+        SVG Stroke Properties
+    </h1>
+
+    <div class="svg-main">
+
+        <svg viewBox="0 0 100 100">
+
+            <line X1="10" Y1="50" X2="90" Y2="50"></line>
+
+        </svg>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="svg-main">
+
+        <svg viewBox="0 0 100 100">
+
+            <rect X="20" Y="30" width="60" height="40"></rect>
+
+        </svg>
+
+    </div>
+
+</body>
+
+</html>
