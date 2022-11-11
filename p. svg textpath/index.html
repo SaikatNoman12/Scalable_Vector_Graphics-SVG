@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG stroke Properties</title>
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .svg-main {
+            width: 600px;
+            height: 600px;
+            margin: auto;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            border: 2px solid red;
+            background-color: gray;
+        }
+
+        .name {
+            font-size: 7.3px;
+            stroke: red;
+            stroke-width: 0.2;
+            stroke-dasharray: 5;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>
+        SVG textPath Element
+    </h1>
+
+    <div class="svg-main">
+
+        <svg viewBox="0 0 100 100">
+
+            <defs>
+                <path id="shape" d="M20,50 A40,50 0 0,1 80,50" fill="none" stroke="red"></path>
+            </defs>
+
+            <text class="name">
+                <textPath xlink:href="#shape">Abdullah Al Nomaan</textPath>
+            </text>
+
+        </svg>
+
+    </div>
+
+</body>
+
+</html>

@@ -30,7 +30,6 @@
 
 15. SVG group Element
 
-16. SVG use, defs and symbol element
+16. SVG use, defs and symbol Element
 
-
-
+17. SVG textPath Element
