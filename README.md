@@ -24,12 +24,14 @@
 
 12. SVG image element.
 
-13. SVG stroke properties
+13. SVG stroke properties.
 
-14. SVG fill properties
+14. SVG fill properties.
 
-15. SVG group Element
+15. SVG group Element.
 
-16. SVG use, defs and symbol Element
+16. SVG use, defs and symbol Element.
 
-17. SVG textPath Element
+17. SVG textPath Element.
+
+18. SVG gradient Elements.
