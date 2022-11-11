@@ -29,3 +29,8 @@
 14. SVG fill properties
 
 15. SVG group Element
+
+16. SVG use, defs and symbol element
+
+
+

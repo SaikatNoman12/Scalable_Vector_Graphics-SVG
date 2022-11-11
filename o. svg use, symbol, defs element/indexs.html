@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG stroke Properties</title>
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .svg-main {
+            width: 600px;
+            height: 600px;
+            margin: auto;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            border: 2px solid red;
+            background-color: gray;
+        }
+
+        .circle {
+            fill: pink;
+            /* stroke: blue; */
+        }
+
+        .rect {
+            fill: red;
+            /* stroke: blue; */
+        }
+
+        .group {
+            transform: rotate(45deg);
+            transform-origin: center;
+            stroke-dasharray: 20;
+        }
+
+        .group1{
+            stroke: blue;
+
+        }
+
+        .start {
+            stroke: blue;
+        }
+
+        .gp{
+            /* transform: rotate(45deg); */
+            /* transform-origin: center; */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>
+        SVG use, symbol & defs Element
+    </h1>
+
+    <div class="svg-main">
+
+        <svg viewBox="0 0 100 100">
+
+            <defs>
+                <symbol class="group1" id="sym" viewBox="0 0 800 800">
+                    <circle class="circle" cx="50" cy="50" r="30"></circle>
+                    <rect class="rect" X="40" Y="40" width="20" height="20"></rect>
+                </symbol>
+
+                <symbol class="group1" id="sym2" viewBox="0 0 600 600">
+                    <circle class="circle" cx="50" cy="50" r="30"></circle>
+                    <rect class="rect" X="40" Y="40" width="20" height="20"></rect>
+                </symbol>
+            </defs>
+
+
+            <defs>
+                <g class="group" id="shape">
+                    <circle class="circle" cx="50" cy="50" r="30"></circle>
+                    <rect class="rect" X="40" Y="40" width="20" height="20"></rect>
+                </g>
+            </defs>
+
+
+            
+            <use class="start" xlink:href="#shape" X="-40" Y="0"></use>
+            
+            <use class="start" xlink:href="#shape" X="40" Y="0"></use>
+            
+            <use class="gp" xlink:href="#sym" x="30" y="30"></use>
+            
+            <use xlink:href="#sym2" x="50" y="0"></use>
+
+        </svg>
+
+    </div>
+
+
+</body>
+
+</html>
